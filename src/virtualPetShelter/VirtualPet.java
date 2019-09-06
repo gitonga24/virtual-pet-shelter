@@ -4,9 +4,9 @@ public class VirtualPet {
 
 	int hunger ;
 	int thirst ;
-	boolean waste ;
+	String waste ;
 	int boredom ;
-	boolean sick; 
+	String sick; 
 	String name ; 
 	int Rand;
 	String favoriteFood;
@@ -20,15 +20,12 @@ public class VirtualPet {
 		
 	}
 	
-	public VirtualPet (String name) {
-		
-		this.name = name;
-	}
+
 	
-	public VirtualPet(String name, String description, int hunger, int thirst, boolean waste, int boredom, boolean sick,  String favoriteFood ) {
+	public VirtualPet(String name, String description, int hunger, int thirst, String bathroom, int boredom, String sick,  String favoriteFood ) {
 		this.hunger = hunger;
 		this.thirst = thirst;
-		this.waste = waste;
+		this.waste = bathroom;
 		this.boredom = boredom;
 		this.sick = sick;
 		this.name = name;
